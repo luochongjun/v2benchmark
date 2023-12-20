@@ -9,13 +9,12 @@ apt-get -y upgrade
 apt-get -y install git
 
 # Install Go
-curl -O https://storage.googleapis.com/golang/go1.7.4.linux-amd64.tar.gz
-tar -C /usr/local -xzf go1.7.4.linux-amd64.tar.gz
+apt-get install golang
 
 # Download this repo
 mkdir -p ./git/src/github.com/v2ray
 cd ./git/src/github.com/v2ray
-git clone https://github.com/v2ray/experiments.git
+git clone https://github.com/luochongjun/v2benchmark.git
 cd experiments/benchmark/testcases
 source ./env.sh
 
@@ -34,9 +33,8 @@ source ./env.sh
 
 ```bash
 # Install
-curl -O https://install.direct/go.sh
-chmod +x go.sh
-./go.sh
+curl -O https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh
+bash install-release.sh
 
 # V2Ray direct: Dokodemo-door <-> Freedom
 ./v2ray_bare.sh
