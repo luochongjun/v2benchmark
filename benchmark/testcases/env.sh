@@ -2,4 +2,4 @@
 
 export GOPATH=~/git
 export PATH=/usr/local/go/bin:$PATH
-export TEST_DIR=$GOPATH/src/github.com/v2ray/experiments/benchmark/testcases
+export TEST_DIR=$GOPATH/src/github.com/v2ray/v2benchmark/benchmark/testcases
