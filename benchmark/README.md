@@ -15,7 +15,7 @@ apt-get install golang
 mkdir -p ./git/src/github.com/v2ray
 cd ./git/src/github.com/v2ray
 git clone https://github.com/luochongjun/v2benchmark.git
-cd experiments/benchmark/testcases
+cd v2benchmark/benchmark/testcases
 source ./env.sh
 
 # Build benchmark tools
